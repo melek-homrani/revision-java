@@ -43,7 +43,7 @@ public class ListPatients implements InterfacePatient {
     /* Avec l’api Stream */
     public void trierPatientsParNom() {
         /*à completer (10) (1 point)*/
-        listP.stream().sorted(Comparator.comparing(Patient::getNom));
+        listP = listP.stream().sorted(Comparator.comparing(Patient::getNom)).toList();
     }
 
     /* Avec l api stream */
