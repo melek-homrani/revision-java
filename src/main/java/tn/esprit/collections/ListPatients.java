@@ -1,10 +1,11 @@
 package tn.esprit.collections;
 
+import tn.esprit.interfaces.InterfacePatient;
 import tn.esprit.models.Patient;
 
 import java.util.*;
 
-public class ListPatients {
+public class ListPatients implements InterfacePatient {
     /*à completer (3)  (0.5 point)*/
     private List<Patient> listP;
 
