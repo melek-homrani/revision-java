@@ -26,7 +26,7 @@ public class ListPatients implements InterfacePatient {
 
     /* Avec l’api Stream */
     public boolean rechercherPatient(Patient p) {
-        return listP.contains(p);
+        return listP.stream().anyMatch(e-> e.equals(p));
     }
 
     /* Avec l’api Stream */
